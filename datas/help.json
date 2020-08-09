@@ -1,0 +1,95 @@
+{
+  "summary": [
+    "**play** - add the song to the queue and play it.",
+    "**skip** - vote to skip the current song.",
+    "**loop** - toggle looping queue.",
+    "**ban** - ban the song from this server.",
+    "**unban** - unban the banned song from this server.",
+    "**rr** - remove range of song from the server queue.",
+    "**perms** - view, edit permissions related datas.",
+    "**queue** - view the current song queue of this server.",
+    "**leave** - make this bot leave voice channel and clear the queue.",
+    "**libs** - view, edit, play your own custom libraries of songs.",
+    "**help** - display this message and other help messages for each command.",
+    "For more information about each commands, type !help <command_name>",
+    "The commands that has (admins only) tag are admins only by default, the admins or owner can change the permission of a user to has that permission too."
+  ],
+  "commands": {
+    "help": [
+      "**help**",
+      "Display help message. Tell a summary of each commands.",
+      "**help <command_name>**",
+      "Display information about the given command.",
+      "<command_name>: the name of the command which the its help message is going to be shown."
+    ],
+    "play": [
+      "**play <song_name|url>**",
+      "add the given song or url to the server's queue",
+      "<song name|url>: the name or the url of the song to be added to the queue"
+    ],
+    "skip": [
+      "**skip**",
+      "Vote to skip the currently playing song. If the user has forceskip permission, the song is automatically skipped"
+    ],
+    "loop": [
+      "**loop**",
+      "Loop songs in queue. Using this command while the queue is looping will unloop the queue."
+    ],
+    "ban": [
+      "**ban**",
+      "View list of banned song",
+      "**ban <song_name|url>**",
+      "Make the song can't be played by KrissanaPatronum (admins only)",
+      "<song_name|url>: the name or the url of the song to be banned"
+    ],
+    "rr": [
+      "**rr <begin_index> <end_index>**",
+      "Remove range of songs from queue",
+      "<begin_index>: beginning index of songs to be removed from the queue (inclusive)",
+      "<end_index>: ending index of songs to be removed from the queue (inclusive)"
+    ],
+    "perms": [
+      "**perms <nametag> <permission_name|all> <deny|allow>**",
+      "Denies or allows user's permission (admins only).",
+      "<nametag>: the user to change permission.",
+      "<permission_name|all>: the name of the permission to set to ther user, or all for all the permissions.",
+      "<deny|allow>: whether the permission is going to be deny or allowed for the given user.",
+      "**perms <nametag>**",
+      "View user's permission",
+      "<nametag>: the name of person you want to view.",
+      "**perms**",
+      "View message author's permission."
+    ],
+    "unban": [
+      "**unban <song_name|url>**",
+      "Make the song (that is currently banned) can be played by KrissanaPatronum (admins only) ",
+      "<song name|url>: the name or url of song to be unbanned."
+    ],
+    "queue": [
+      "**queue**",
+      "View list of all the songs in the queue."
+    ],
+    "leave": [
+      "**leave**",
+      "Disconnect KrissanaPatronum bot from voice channel and clear all the song queue."
+    ],
+    "libs": [
+      "**libs**",
+      "View all the libraries that you own.",
+      "**libs** new",
+      "Create new library with index that follow your last library, or 1 if there is no library yet.",
+      "**libs add <library_index> <song_name|url>**",
+      "Add the given song to the library with the given index.",
+      "<library_index>: the index of the library that you want to insert the song to.",
+      "<song_name|url>: the name or the url of the song that you want to insert to the library.",
+      "**libs rr <library_index> <begin_index> <end_index>**",
+      "Remove range of songs from the library with the given index.",
+      "<library_index>: the index of the library that you want to insert the song to.",
+      "<beginning index>: beginning index of songs to be removed from the library (inclusive)",
+      "<ending index>: ending index of songs to be removed from the library (inclusive)",
+      "**libs play <library_index>**",
+      "Add all the song in the library with the given index to the server song queue.",
+      "<library_index>: the index of the library that you want to insert the song to."
+    ]
+  }
+}
