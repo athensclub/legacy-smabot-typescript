@@ -1,6 +1,6 @@
 # legacy-smabot-typescript
 A legacy codebase for SMABot, a discord music bot.
-This project is discontinued and is currently being ported to ~Discord4J~ Javacord library.
+This project is discontinued and its successor is https://github.com/athensclub/SMABot.
 # **SMABot** 
 
 A simple music bot that includes multiple features such as permissions,
